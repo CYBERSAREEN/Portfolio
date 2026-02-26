@@ -10,5 +10,7 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+module.exports = app;
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Portfolio live at http://localhost:${PORT}`));
